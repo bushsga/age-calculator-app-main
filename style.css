@@ -1,0 +1,120 @@
+:root {
+  --clr-pupple: hsl(259, 100%, 65%);
+  --clr-red: hsl(0, 100%, 67%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-offwhite: hsl(0, 0%, 94%);
+  --clr-lightgrey: hsl(0, 0%, 86%);
+  --clr-smokeygrey: hsl(0, 1%, 44%);
+  --clr-offblack: hsl(0, 0%, 8%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--clr-offwhite);
+}
+
+main {
+  width: 842px;
+  height: 651px;
+  background-color: var(--clr-white);
+  border-radius: 1rem;
+  border-radius: 2rem 2rem 14rem 2rem;
+}
+
+.container {
+  width: 727px;
+  position: relative;
+}
+
+.container > div {
+  width: 634px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 58px;
+  margin-top: 58px;
+}
+
+div.input-block,
+div.input-block input {
+  color: var(--clr-smokeygrey);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+div.input-block input {
+  font-size: 32px;
+  width: 158px;
+  border: 1px solid var(--clr-lightgrey);
+  border-radius: 4px;
+  padding-left: 24px;
+  height: 70px;
+  margin-top: 14px;
+  border-radius: 10px;
+}
+
+hr {
+  width: 100%;
+  margin-left: 58px;
+  margin-top: 50px;
+  color: var(--clr-lightgrey);
+}
+
+div#calcBtn {
+  background-color: var(--clr-pupple);
+  border-radius: 50%;
+  width: 97px;
+  height: 97px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 77px;
+  left: 90%;
+  cursor: pointer;
+}
+
+div#calcBtn:hover {
+  background-color: var(--clr-offblack);
+  transition: all ease-in-out 0.2s;
+}
+
+div.input-block input {
+  color: var(--clr-offblack);
+}
+
+.result-block {
+  margin-left: 68px;
+}
+
+.result-block span:nth-of-type(1) {
+  color: var(--clr-pupple);
+  font-weight: bold;
+  font-size: 5rem;
+  font-style: italic;
+  margin-right: 2rem;
+}
+
+.result-block span:nth-of-type(2) {
+  color: var(--clr-offblack);
+  font-weight: bold;
+  font-size: 5rem;
+  font-style: italic;
+  margin-right: 2rem;
+}
+
+span.error_message {
+  color: var(--clr-red);
+  font-size: 14px;
+  font-style: italic;
+  letter-spacing: 8px;
+}
