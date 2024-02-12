@@ -118,3 +118,67 @@ span.error_message {
   font-style: italic;
   letter-spacing: 8px;
 }
+
+@media (max-width: 768px) {
+  main {
+    width: 90%;
+    height: 500px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .container > div {
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-left: 45px;
+    margin-top: 52px;
+  }
+
+  div.input-block input {
+    font-size: 15px;
+    width: 80px;
+
+    height: 50px;
+  }
+
+  hr {
+    width: 90%;
+    margin-left: 40px;
+    margin-top: 55px;
+  }
+
+  div#calcBtn {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    top: 70px;
+    left: 40%;
+  }
+
+  .result-wrapper {
+    margin-top: 3rem;
+  }
+
+  .result-block {
+    margin-left: 20px;
+  }
+
+  .result-block span:nth-of-type(1) {
+    font-size: 1.8rem;
+    margin-right: 2rem;
+  }
+
+  .result-block span:nth-of-type(2) {
+    font-size: 1.8rem;
+    margin-right: 2rem;
+  }
+
+  span.error_message {
+    font-size: 10px;
+    letter-spacing: 6px;
+  }
+}
